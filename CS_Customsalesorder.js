@@ -16,7 +16,7 @@ define(['N/record','N/ui/dialog'] , function (record,dialog){
         var customername = salesOrder.getText({ fieldId : 'entity'})
         var customertype = salesOrder.getValue({ fieldId : 'isperson'})
         var customeremail = salesOrder.getValue({ fieldId:'email'})
-        var salesrep = salesOrder.getValue({fieldId: 'salesrep'})
+        var salesrep = salesOrder.getText({fieldId: 'salesrep'})
 
         var dialogMessage = 'Customer ID : ' + customerId + '\n' +
                         'Customer Name : ' + customername + '\n' +
